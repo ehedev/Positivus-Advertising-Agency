@@ -25,7 +25,7 @@ export default function Dashboard() {
         >
           <FaTimes className="sidebarClose-icon mt-3 ms-3" size={24} />
         </button>
-        <SidebarNav />
+        <SidebarNav handleCloseSidebar={handleCloseSidebar} />
       </div>
 
       {isSidebarOpen && (

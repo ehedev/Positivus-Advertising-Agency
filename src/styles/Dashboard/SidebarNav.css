@@ -6,7 +6,7 @@
 }
 
 .sidebar-container {
-    min-width: 350px;
+    min-width: 280px;
     border-inline-end-color: var(--mainColor) !important;
     transition: transform 0.3s ease-in-out;
 

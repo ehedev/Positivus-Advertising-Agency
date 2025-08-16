@@ -1,7 +1,7 @@
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
 
-export default function SidebarNav() {
+export default function SidebarNav({ handleCloseSidebar }) {
   const links = [
     { path: "general-settings", label: "General Settings" },
     { path: "services", label: "Services" }
@@ -12,7 +12,10 @@ export default function SidebarNav() {
     <div className="sidebar">
       <button
         className="backHome-button btn btn-secondary mt-3 ms-3"
-        onClick={() => navigate("/")}
+        onClick={() => {
+          handleCloseSidebar();
+          navigate("/");
+        }}
       >
         ← Back to Home
       </button>
@@ -27,6 +30,7 @@ export default function SidebarNav() {
           <NavLink
             key={link.path}
             to={link.path}
+            onClick={() => handleCloseSidebar()}
             className={({ isActive }) =>
               `nav-link ${isActive ? "active" : ""}`
             }

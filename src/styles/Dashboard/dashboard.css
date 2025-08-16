@@ -7,9 +7,7 @@
           background-color: transparent;
           color: var(--mainColor);
           border-color: var(--mainColor);
-        }
 
-        [data-theme='dark'] & {
           &:hover {
             background-color: var(--secondaryColor);
             color: var(--bgColor);
@@ -23,23 +21,21 @@
         outline: none;
         transition: .4s;
         border: 0;
+        
+        &:hover {
+          opacity: .85;
+        }
 
         [data-theme='dark'] & {
           background-color: transparent;
           color: var(--mainColor);
           border: 1px solid var(--mainColor);
-        }
 
-        [data-theme='dark'] & {
           &:hover {
             background-color: var(--secondaryColor);
             color: var(--bgColor);
             border-color: var(--bgColor);
           }
-        }
-  
-        &:hover {
-          opacity: .85;
         }
       }
     }
