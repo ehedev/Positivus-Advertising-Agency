@@ -1,0 +1,51 @@
+@import url('../Global/global.css');
+
+.header {
+  .header-brandName {
+    color: var(--secondaryColor);
+
+    .header-logo {
+      height: 25px;
+    }
+  }
+
+  #main-navbar {
+    .nav-link {
+      color: var(--secondaryColor);
+      
+      &:hover {
+        color: var(--lightTextColor);
+      }
+
+      [data-theme="dark"] & {
+        &:hover {
+          color: var(--mainColor);
+        }
+      }
+    }
+
+    .header-dashboard-btn {
+      background-color: transparent;
+      border: 1px solid var(--secondaryColor);
+      text-decoration: none;
+      color: var(--secondaryColor);
+      transition: .3s;
+      
+      &:hover {
+        background-color: var(--secondaryColor);
+        color: var(--mainColor);
+      }
+
+      [data-theme="dark"] & {
+        &:hover {
+          background-color: var(--secondaryColor);
+          color: var(--bgColor);
+        }
+      }
+    }
+  }
+  
+  .navbar-toggler {
+    color: var(--secondaryColor);
+  }
+}

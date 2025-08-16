@@ -1,0 +1,45 @@
+@import url('../Global/global.css');
+
+.case-studies-section {
+  .case-container {
+    background-color: var(--secondaryColor);
+    border-radius: 45px;
+    padding: 60px 70px;
+
+    [data-theme='dark'] & {
+      background-color: #DBDBDB17;
+    }
+
+    .border-light-subtle {
+      border-right: 1px solid var(--borderLight);
+    }
+
+    .case-p {
+      color: #FFF;
+    }
+    
+    .case-link {
+      color: var(--mainColor);
+      text-decoration: underline;
+    }
+  
+    .arrow-icon {
+      display: inline-block;
+      transform: rotate(-45deg);
+      margin-left: 0.5rem;
+    }
+  }
+
+  .case-studies-mobile {
+    .case-wrap {
+      scroll-snap-type: x mandatory;
+      -webkit-overflow-scrolling: touch;
+
+      .case-card {
+        scroll-snap-align: start;
+        min-width: 280px;
+        max-width: 50%;
+      }
+    }
+  }
+}

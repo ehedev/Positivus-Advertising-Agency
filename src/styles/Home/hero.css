@@ -1,0 +1,11 @@
+@import url('../Global/global.css');
+
+.hero-section {
+  .hero-title {
+    color: var(--secondaryColor);
+  }
+
+  .hero-description {
+    color: var(--lightTextColor);
+  }
+}

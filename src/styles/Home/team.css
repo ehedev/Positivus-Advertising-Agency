@@ -1,0 +1,62 @@
+@import url('../Global/global.css');
+
+.team-section {
+  .team-card {
+    background-color: var(--cardBg);
+    border: 1px solid var(--secondaryColor);
+    box-shadow: 0px 5px 4px 0px var(--secondaryColor);
+    padding: 35px;
+    transition: transform 0.5s ease;
+
+    [data-theme='dark'] & {
+      background-color: #DBDBDB17;
+      border: none;
+      box-shadow: none;
+    }
+
+    &:hover {
+      transform: scale(1.03);
+      z-index: 2;
+    }
+
+    img {
+      width: 70px;
+      height: 70px;
+    }
+
+    h6, p, hr {
+      color: var(--secondaryColor);
+    }
+
+    .team-linkedin {
+      background-color: var(--secondaryColor);
+      color: var(--mainColor);
+      border-radius: 50%;
+      padding: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 34px;
+      height: 34px;
+
+      [data-theme="dark"] & {
+        background-color: var(--mainColor);
+        color: var(--bgColor);
+      }
+    }
+
+    .team-description {
+      color: var(--lightTextColor);
+    }
+  }
+
+  .team-button {
+    width: auto;
+    padding: 13px 60px;
+    border-radius: 10px;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
+  }
+}

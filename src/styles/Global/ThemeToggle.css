@@ -1,0 +1,140 @@
+@import url('./global.css');
+
+.theme-toggle-mobile .theme-toggle-btn, .theme-toggle-home .theme-toggle-btn {
+    width: 60px;
+    height: 40px;
+    background-color: var(--secondaryColor);
+    border: none;
+    border-radius: 0 8px 8px 0;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 4px 6px var(--shadowColor);
+    transition: all 0.3s ease;
+    z-index: 9999;
+
+    [data-theme="dark"] & {
+        background-color: #3d3d3dab;
+    }
+
+    .darkMode-icon {
+        color: #DFDFDF;
+        filter: drop-shadow(0 0 5px rgba(169, 207, 247, 0.8));
+    }
+
+    .lightMode-icon {
+        color: #FFD700;
+        filter: drop-shadow(0 0 5px rgb(185, 185, 11));
+    }
+}
+
+.theme-toggle-mobile .theme-toggle-btn {
+    position: static;
+    width: 50px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: 17px;
+
+    &:hover {
+        transform: translateY(-2px);
+    }
+
+    @media (max-width: 991px) {
+        & {
+          display: block;
+        }
+    }
+}
+
+.theme-toggle-home .theme-toggle-btn {
+    position: fixed;
+    top: 80px;
+    left: -10px;
+
+    [data-theme="dark"] & {
+        background-color: #3d3d3dab;
+    }
+
+    &:hover {
+        left: -2px;
+    }
+
+    .darkMode-icon {
+        color: #DFDFDF;
+        filter: drop-shadow(0 0 5px rgba(169, 207, 247, 0.8));
+    }
+
+    .lightMode-icon {
+        color: #FFD700;
+        filter: drop-shadow(0 0 5px rgb(185, 185, 11));
+    }
+
+    @media (max-width: 991px) {
+        & {
+          display: none;
+        }
+    }
+}
+
+/* ==== Switch Styles ==== */
+.theme-switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 30px;
+}
+
+.theme-switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 2px solid var(--secondaryColor);
+    border-radius: 30px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    padding: 0 5px;
+    font-size: 16px;
+    transition: background-color 0.3s, justify-content 0.3s;
+}
+
+.slider .switch-icon {
+    position: absolute;
+    font-size: 15px;
+}
+
+.slider .switch-darkIcon {
+    right: 6px;
+}
+
+.slider .switch-lightIcon {
+    left: 6px;
+}
+
+input:checked + .slider {
+    justify-content: flex-end;
+}
+
+.slider::before {
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    background-color: var(--secondaryColor);
+    border-radius: 50%;
+    transition: transform 0.3s;
+    left: 3px;
+}
+
+input:checked + .slider::before {
+    transform: translateX(30px);
+}

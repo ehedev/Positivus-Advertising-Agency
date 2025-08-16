@@ -1,0 +1,115 @@
+@import url('../Global/global.css');
+
+.process-section {
+  /* Accordion Item as a card */
+  .accordion-item {
+    background-color: var(--cardBg);
+    border: 1px solid var(--secondaryColor) !important;
+    box-shadow: 0px 5px 4px 0px var(--secondaryColor);
+    border-radius: 0.5rem;
+    overflow: hidden;
+    margin-bottom: 20px;
+
+    [data-theme="dark"] & {
+      background-color: #00000017;
+      box-shadow: 0px 2px 4px 0px #696969;
+    }
+  }
+
+  /* Accordion Header */
+  .accordion-button {
+    background-color: var(--cardBg);
+    color: var(--secondaryColor);
+    font-weight: 600;
+    font-size: 1.2rem;
+    padding: 30px 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: none;
+    box-shadow: 0px 2px 0px var(--secondaryColor);
+
+    [data-theme="dark"] & {
+      background-color: #00000017;
+    }
+
+    .step-number {
+      font-weight: 700;
+      font-size: 2.6rem;
+      color: var(--secondaryColor);
+      margin-right: 15px;
+    }
+
+    &:not(.collapsed) .step-number {
+      color: var(--secondaryColor);
+
+      [data-theme="dark"] & {
+        color: var(--mainColor);
+      }
+    }
+
+    &::after {
+      content: '+';
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: var(--bgColor);
+      box-shadow: 0 0 0 1px var(--borderColor);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 1.9rem;
+      transition: transform 0.3s ease;
+      background-image: none !important;
+      transform: none !important;
+    }
+
+    &:not(.collapsed)::after {
+      content: '-';
+      background-color: var(--bgColor);
+      color: var(--secondaryColor);
+    }
+
+    [data-theme="dark"] &:not(.collapsed)::after {
+      background-color: #FFFFFF0D;
+      color: var(--mainColor);
+    }
+
+    &:not(.collapsed) {
+      background-color: var(--mainColor);
+      color: var(--secondaryColor);
+      box-shadow: 0 2px 0 var(--secondaryColor);
+
+      [data-theme="dark"] & {
+        background-color: #00000017;
+        color: var(--mainColor);
+      }
+    }
+  }
+
+  /* Accordion Body */
+  .accordion-body {
+    font-size: 0.95rem;
+    line-height: 1.6;
+    padding: 20px 35px;
+    background-color: var(--mainColor);
+    color: var(--secondaryColor);
+
+    [data-theme="dark"] & {
+      background-color: #DBDBDB17;
+    }
+  }
+
+  /* Mobile Adjustments */
+  @media (max-width: 768px) {
+    .accordion-button {
+      font-size: 1rem;
+      padding: 20px 25px;
+    }
+
+    .accordion-body {
+      font-size: 0.9rem;
+      padding: 18px 25px;
+    }
+  }
+}

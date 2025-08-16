@@ -1,0 +1,111 @@
+@import url('../Global/global.css');
+
+.footer-section {
+  .badge {
+    background-color: var(--mainColor);
+    font-size: 14px;
+  }
+
+  .footer-inner {
+    background-color: var(--secondaryColor);
+    color: white;
+
+    @media (min-width: 992px) {
+      border-top-left-radius: 3rem;
+      border-top-right-radius: 3rem;
+    }
+
+    [data-theme='dark'] & {
+      background-color: #DBDBDB17
+    }
+
+    img {
+      width: 20px;
+      height: 20px;
+    }
+
+    h5 {
+      font-size: 1.5rem;
+      transition: .3s;
+
+      &:hover {
+        color: var(--mainColor); 
+      }
+    }
+
+    a {
+      color: white;
+      transition: .3s;
+
+      &:hover {
+        color: var(--mainColor);
+        text-decoration: none;
+      }
+    }
+
+    .social-links {
+      background-color: var(--bgColor);
+      color: var(--secondaryColor);
+      border-radius: 50%;
+      padding: 5px;
+      transition: .3s;
+
+      [data-theme='dark'] & {
+        background-color: var(--mainColor);
+        color: var(--bgColor);
+      }
+
+      &:hover {
+        background-color: var(--secondaryColor);
+        color: var(--mainColor);
+      }
+
+      [data-theme='dark'] & {
+        &:hover {
+          background-color: var(--secondaryColor);
+          color: var(--bgColor);
+        }
+      }
+    }
+
+    .email-container {
+      background-color: #292A32;
+
+      [data-theme='dark'] & {
+        background-color: #0706065E;
+      }
+    }
+
+    .footer-input {
+      background-color: transparent;
+      color: white;
+      border-radius: 8px;
+      padding: 15px;
+
+      &:focus {
+        border: 1px solid var(--mainColor);
+        outline: none;
+      }
+
+      &::placeholder {
+        color: white;
+      }
+    }
+
+    .footer-subscribe-btn {
+      background-color: var(--mainColor);
+      border-radius: 8px;
+      padding: 15px;
+      color: var(--secondaryColor);
+      transition: .4s;
+
+      [data-theme='dark'] & {
+        color: var(--bgColor);
+      }
+
+      &:hover {
+        opacity: .75;
+      }
+    }
+  }
+}
