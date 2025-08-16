@@ -25,7 +25,7 @@ const CaseStudies = () => {
               >
                 <p className="case-p fs-6">{study.text}</p>
                 <div className="d-flex align-items-center gap-2 mt-3">
-                  <a href="#" className="case-link text-decoration-none" onClick={(e) => e.preventDefault()}>
+                  <a href="javascript:void(0);" className="case-link text-decoration-none" onClick={(e) => e.preventDefault()}>
                     Learn more <i className="fas fa-arrow-right arrow-icon"></i>
                   </a>
                 </div>
@@ -44,7 +44,7 @@ const CaseStudies = () => {
               >
                 <p className="case-p fs-6">{study.text}</p>
                 <div className="d-flex align-items-center gap-2 mt-3">
-                  <a href="#" className="case-link text-decoration-none">
+                  <a href="javascript:void(0);" className="case-link text-decoration-none">
                     Learn more <i className="fas fa-arrow-right arrow-icon"></i>
                   </a>
                 </div>

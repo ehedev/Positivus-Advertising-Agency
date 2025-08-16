@@ -123,7 +123,7 @@ const Footer = () => {
           <div className="d-flex flex-column flex-md-row align-items-center align-items-md-start small gap-2 gap-md-5 text-center text-md-start">
             <p className="mb-0 fw-normal">© 2023 Positivus. All Rights Reserved.</p>
             <a
-              href="#"
+              href="javascript:void(0);"
               onClick={(e) => e.preventDefault()}
               className="fw-light"
               style={{ textDecoration: isLargeScreen ? undefined : 'none' }}

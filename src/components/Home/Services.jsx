@@ -78,7 +78,7 @@ const Services = () => {
                     />
                   </div>
                     <a
-                      href="#"
+                      href="javascript:void(0);"
                       className="fw-normal text-decoration-none"
                       style={{ color: service.linkColor }}
                     >
