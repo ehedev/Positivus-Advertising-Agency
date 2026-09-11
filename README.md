@@ -45,4 +45,4 @@ The standout engineering feature of the dashboard is the interactive form state 
 * **Complex Form Handling:** Built robust, multi-input modals that handle both text data and media uploads seamlessly within the dashboard ecosystem.
 
 ---
-*Developed by Emad Wagih — Frontend Web Developer*
+*Developed by [Emad Wagih] — Frontend Web Developer*
