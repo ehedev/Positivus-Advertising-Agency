@@ -2,7 +2,7 @@
 
 > **Live Demo:** [https://positivus-cms.vercel.app]
 
-![Positivus Advertising Agency Preview](./src/assets/Logos/preview-light.png)
+![Positivus Advertising Agency Preview](./src/assets/Preview/preview-light.png)
 
 Positivus is a dual-interface web application featuring a modern, conversion-optimized public landing page for a digital advertising agency, paired with a custom-built administrative dashboard. Engineered using React and Bootstrap, this project demonstrates the ability to bridge public-facing UI design with complex, state-driven internal content management tools.
 
